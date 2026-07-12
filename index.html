@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Yang Tutoring</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="nav-logo">Yang Scholars</a>
+
+        <div class="nav-links">
+            <a href="#about">Why Me</a>
+            <a href="#services">What I Teach</a>
+            <a href="#lesson">About Lessons</a>
+            <a href="#feedback">Samples</a>
+            <a onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })">Pricing</a>
+        </div>
+
+        <a onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })" class="nav-button">Book a Consultation</a>
+    </nav>
+
+    <header class="hero">
+        <img
+            class="hero-background"
+            src="images/hero-background.png"
+            alt="IB 45 and university admissions">
+
+        <div class="hero-content">
+            <div class="hero-box reveal">
+                <p class="hero-tag">
+                    Achieve Your Highest Academic Potential.
+                </p>
+
+                <p class="hero-subtag">
+                    Learn Smarter. Perform Better.
+                </p>
+
+                <h1>
+                    Become the <s>Student</s> Thinker People Remember.
+                </h1>
+
+                <p class="hero-description">
+                    Learn from a 45/45 IB Diploma graduate with full-scholarship admissions to Princeton, Stanford, Columbia, UPenn, Brown, and Juilliard under the Kovner Fellowship.
+                </p>
+
+                <div class="hero-buttons">
+                    <button>Book a Free Consultation</button>
+                    <button class="secondary" onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })">View Services</button>
+                </div>
+                <p id="scrollDownForMore" class="hero-description">...or scroll down to learn more!</p>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <section id="about" class="about-me">
+        <div class="container">
+            <div class="about-header reveal">
+                <p class="section-tag">About My Approach</p>
+                <h2>7 Years of Teaching Experience Taught Me How To Teach Others To Think.</h2>
+
+                <div class="about-card reveal">
+                    <p class="section-description">
+                        I figured out the IB while balancing it with the SAT, Ivy League Applications and 2 Hours of Piano Repertoire for Conservatory Auditions.<br><br>
+                        I've learned that none of this is about how much you memorize; a greater return on investment is developing the skills that these assessments teach you.<br><br>
+                        <b>Mastering the IB means mastering several skills that get you a competitive advantage in college, such as essay-writing, foreign-languagy study, or research rigor.</b>
+                        <b>But it also teaches you how to think: across disciplines with a consistently analytical mind.</b>
+                        <br>
+                        <br>
+                        Most tutors teach you the basics: how to get decent at a subject, but never how to apply it or own it.<br><br>
+                        <b>That's</b> the missing piece that keeps you locked at a 5 or a 6.<br><br>
+                        Here, it's my mission to teach you in a way others won't. How to develop the knowledge and skills so you can apply it to the IB and beyond the IB.
+                    </p>
+                </div>
+            </div>
+
+            <!--
+            <div class="about-cards reveal">
+                <div class="about-card">
+                    <h3>Think Deeply</h3>
+                    <p>Understand the “why,” not just the method.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Study Smarter</h3>
+                    <p>Build systems that save time and reduce stress.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Perform Better</h3>
+                    <p>Turn knowledge into results under pressure.</p>
+                </div>
+            </div>
+        -->
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="services" class="services">
+        <div class="services-header">
+            <p class="section-tag">Much More Than A Tutor</p>
+            <h2>Your Comprehensive Academic Guide</h2>
+            <p class="section-description">
+                Most tutors teach you the subject. I help you find the beauty in places you'd least expect.
+            </p>
+        </div>
+
+        <div class="accordion reveal">
+            <div class="accordion-item active">
+                <button class="accordion-question">
+                    <span>Specialty Academic Subjects</span>
+                    <span class="accordion-icon">-</span>
+                </button>
+
+                <div class="accordion-answer">
+                    <div class="accordion-grid">
+                        
+                        <div>
+                            <h3>English Language & Literature HL/SL</h3>
+                            <ul>
+                                <li>Learn how to form a unique, insightful interpretation from any text</li>
+                                <li>Understand and master exactly what the rubric is asking</li>
+                                <li>How to write 1000+ word essays under timed pressure for exams</li>
+                                <li>Perfect literary and non-literary analysis</li>
+                                <li>Perfect your speech for the Individual Oral (IO)</li>
+                                <li>Learn how to analyze niche/unconventional authorial choices to boost your exam marks</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3>IB Mathematics AA HL/SL</h3>
+                            <ul>
+                                <li>Entire SL and HL Curriculum</li>
+                                <li>Paper 1/2/3 Guidance</li>
+                                <li>Learn effective problem-solving skills</li>
+                                <li>Real-world applications of concepts, giving you better understanding that you can apply back into IB assessments</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3>Geography HL/SL</h3>
+                            <ul>
+                                <li>Master essay-writing, analysis, and different-perspective evaluation</li>
+                                <li>One of my biggest strengths is teaching synthesis so you can understand how the entire curriculum connects.</li>
+                                <li>Fieldwork (IA) guidance and how you can understand advanced mathematical/statistical approaches even if you don't take IB Math AA HL</li>
+                                <li>How to finish the two-essays-in-one-hour Paper 3 with high-quality writing</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3>French B HL/SL</h3>
+                            <ul>
+                                <li>I will help you create a personal vocabulary collection</li>
+                                <li>Teaching you effective reading/listening strategies</li>
+                                <li>How to write a devastatingly creative Paper 1</li>
+                                <li>Master the Individual Oral (IO) with Guidance</li>
+                                <li>Perfect your pronunciation and speak with confidence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-question">
+                    <span>Writing & Research & TOK</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+
+                <div class="accordion-answer">
+                    <div class="accordion-grid">
+                        <div>
+                            <h3>Internal Assessments (IAs)</h3>
+                            <p>I will guide you with every stage of the process, from topic selection to feedback on your final draft — with the goal of helping you produce a unique piece of research that you can call your own.</p>
+                        </div>
+
+                        <div>
+                            <h3>Essay Writing</h3>
+                            <p>I meticulously give feedback on every essay you show me (see <a href="#feedback">Sample Essay Feedback</a> below). I help you understand my feedback so you can hit the top mark bands, whether it's an English, French, or humanities essay, or (in select cases) the Extended Essay.</p>
+                        </div>
+
+                        <div>
+                            <h3>Theory of Knowledge (TOK)</h3>
+                            <p>Exhibition / Essay advice, help with knowledge questions or multi-perspective critical thinking, and how to construct a philosophical argument.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-question">
+                    <span>Beyond the Classroom (SAT Prep, University Essays, etc.)</span>
+                    <span class="accordion-icon">+</span>
+                </button>
+
+                <div class="accordion-answer">
+                    <div class="accordion-grid">
+                        <div>
+                            <h3>SAT</h3>
+                            <p>As a certified College Board / Schoolhouse.world tutor, I teach everything on the SAT, how you can get your dream score, and how to apply concepts to other academics.</p>
+                        </div>
+
+                        <div>
+                            <h3>University Applications</h3>
+                            <p>When applying, I've written 100+ college essays. Now, I'd like to help you stand out, find your voice, and produce a remarkable piece of writing.</p>
+                        </div>
+
+                        <div>
+                            <h3>Study Systems</h3>
+                            <p>I teach critical time management, revision planning, note-taking, and exam preparation skills that avoids most of the generic advice.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="services-body">
+            <div class="service-card">
+                <h3>Your Road to IB 45 and More</h3>
+                
+                <p>The secret to IB?</p>
+                <p>Intentional practice, not rote memorization.</p>
+                <p>You have to realize how ideas are interconnected, and develop the skills to apply it.</p>
+                <p>IB is notorious for its essay writing, but I make it easy and intuitive.</p>
+                <p><b>It's really not that hard if you're coached right: book a free consultation to see.</b></p>
+            </div>
+
+            <div class="service-card">
+                <h3>My Experience Speaks For Itself.</h3>
+                <p>I've tutored for 7 years.</p>
+                <p>I'm a certified official College Board SAT Tutor.</p>
+                <p>I've written hundreds of essays. Hundreds of past papers. Worked on thousands of problems. Conducted meta-analyses on IB's rubrics and markschemes.</p>
+                <p>I've curated thousands of pages of notes that <b>guides you</b> step-by-step in a way that literally anyone can understand.</p>
+                <p>I know what it takes to get that IB 7 or SAT 1500+ you deserve.</p>
+    
+            </div>
+
+            <div class="service-card">
+                <h3>Get Honest, Meticulous, Detailed Feedback</h3>
+                <p>Most people give you vague advice like "make this analysis deeper" or "find a counterargument."</p>
+                <p>I've been through that struggle, but fortunately, I've had many teachers who helped me experience what <b>real detailed feedback</b> looks like.</p>
+                <p>I can guarantee you that I'll treat your work like I did with mine, giving you the detailed feedback you deserve to lock in that 7.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+    
+    <section id="feedback" class="feedback">
+        <div class="feedback-header">
+            <p class="section-tag">For Your Reference</p>
+            <h2>How I Give Feedback</h2>
+            <p class="section-description">I know the intangible value of truly good, detailed, meticulous feedback. Unlike others, I promise to go to any degree to give it to you.</p>
+            <br>
+            <p class="section-description"><b>My Guarantee:</b> I will identify every spot of improvement, teach you how to think of any counterargument you need, or explain why formulas work in such detail until you understand it completely.</p>
+        </div>
+
+        <div class="feedback-body">
+            <img id="feedbackExample" src="images/English Paper 1 Feedback Example.png">
+        </div>
+    </section>
+
+    <hr>
+
+    <!--
+    <section id="testimonials" class="testimonials">
+        <div class="testimonials-header">
+            <p class="section-tag">What Other Students Have Said</p>
+            <h2>Testimonials</h2>
+        </div>
+    </section>
+
+    <hr>
+    -->
+
+    <section id="lesson" class="lesson">
+        <div class="container">
+            <div class="lesson-header reveal">
+                <p class="section-tag">A Typical Lesson</p>
+                <h2>What actually happens when we work together?</h2>
+                <p class="section-description">
+                    Every lesson is designed with efficiency in mind.
+                </p>
+            </div>
+
+            <div class="lesson-timeline reveal">
+                <div class="lesson-step">
+                    <div class="lesson-marker">1</div>
+                    <div class="lesson-content">
+                        <h3>Before the Lesson</h3>
+                        <p>
+                            You send me any materials, essay drafts, topics, etc. that you want to go over. This saves time during the actual lesson; plus, it gives me time to provide more insightful feedback.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lesson-step">
+                    <div class="lesson-marker">2</div>
+                    <div class="lesson-content">
+                        <h3>During the Lesson</h3>
+                        <p>
+                            I will pinpoint the source of error and we will go to any extent to ensure you fully understand the topic. Then, I'll help you apply it to real exam questions and its markscheme expectations, as well as how you can use the idea in the real world for deeper understanding.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lesson-step">
+                    <div class="lesson-marker">3</div>
+                    <div class="lesson-content">
+                        <h3>After the Lesson</h3>
+                        <p>
+                            You leave with clear next steps, targeted practice, and a better understanding
+                            of how to approach similar problems independently. Every single time.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="pricing-header">
+                <p class="section-tag">Get Started</p>
+                <h2>My Services</h2>
+                <p class="section-description">  
+                    I believe that a good quality education shouldn't cost a fortune. Whether you know exactly what you need, or aren't sure which option is the best fit for you, scroll down and book a free consultation below!
+                </p>
+            </div>
+
+            <div class="pricing-card reveal">
+                <div class="pricing-option">
+                    <h3>1-on-1 Tutoring Session</h3>
+                    <p>IB subjects, study strategy, essay writing, and exam preparation.</p>
+                    <strong>CAD $40/hr</strong>
+                </div>
+
+                <div class="pricing-option">
+                    <h3><mark>FULL COURSE:</mark> IB English Language & Literature HL/SL — Analysis Bootcamp</h3>
+                    <p>People struggle the most with analysis. In this course:</p>
+                    <ul>
+                        <li>Course consists of 10 one-hour lessons</li>
+                        <li>Learn to master literary and non-literary analysis in a way that gets you top marks</li>
+                        <li>Gain access to special, curated exercises for analysis (especially good for Paper 1!)</li>
+                    </ul>
+                    <strong>CAD $350 (= $35/hour)</strong>
+                </div>
+
+                <!--
+                <div class="pricing-option">
+                    <h3><mark>FULL COURSE:</mark> IB Math A&A HL/SL — Calculus Bootcamp</h3>
+                    <p>In this course, you'll understand the concepts and their applications, and we will practice tons of problems to get you prepared.</p>
+                    <ul>
+                        <li>10 focused lessons on Calculus</li>
+                        <li>Covers differentiation and integration for both SL and HL</li>
+                        <li>Covers advanced integration, Series expansions, and first-order differential equations for HL</li>
+                        <li><b>Allows for a deeper understanding:</b> I'll tell you WHY it works, and give you sample problems that fit your interests so you understand it better.</li>
+                        <li>Practice real past IB paper questions.</li>
+                    </ul>
+                    <strong>CAD $350 (= $35/hour)</strong>
+                </div>
+                -->
+
+                <div class="pricing-option">
+                    <h3>SAT / University Essay Support</h3>
+                    <p>Support for standardized testing, personal statements, and supplements.</p>
+                    <strong>CAD $50/hr</strong>
+                </div>
+
+                <button class="pricing-button" onclick="document.getElementById('booking').scrollIntoView({ behavior: 'smooth' })">Book a Free Consultation</button>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <div class="booking-header">
+                <p class="section-tag">Ready to <s>Learn</s> Ace Your IB/SAT/Academic Journey?</p>
+                <h2>Schedule your free 30-minute consultation.</h2>
+                <p class="section-description">Choose a time that works for you below. (This may take some seconds to load)</p>
+            </div>
+
+            <div
+                class="calendly-inline-widget calendly-widget"
+                data-url="https://calendly.com/zixuan-yang2018/alex-yang-tutoring-consultation"
+                data-resize="true"
+                style="min-width:320px;">
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async>
+    </script>
+
+    <script src="services.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html>
