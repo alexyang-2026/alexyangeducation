@@ -315,7 +315,7 @@ button.secondary {
 }
 
 .accordion-item.active .accordion-answer {
-    max-height: 900px;
+    max-height: 3000px;
     opacity: 1;
 }
 
