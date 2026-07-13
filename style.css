@@ -21,6 +21,10 @@ img {
     height: auto;
 }
 
+hr {
+    margin: 0;
+}
+
 /* ===== Sticky Navbar ===== */
 
 .navbar {
@@ -87,6 +91,8 @@ img {
 
     position: relative;
     overflow: hidden;
+
+    background: #F5FAFF;
 }
 
 .hero-background {
@@ -222,6 +228,7 @@ button.secondary {
 
 .about-me {
     padding: 120px 40px 40px;
+    background: white;
 }
 
 .about-header {
@@ -263,7 +270,7 @@ button.secondary {
 
 .services {
     padding: 120px 40px;
-    background: #fafafa;
+    background: #F5FAFF;
 }
 
 .services-header {
@@ -346,7 +353,6 @@ button.secondary {
 }
 
 
-
 .services-body {
     margin-top: 20px;
     display: flex;
@@ -386,6 +392,7 @@ button.secondary {
 .feedback {
     padding: 120px 40px;
     margin-bottom: 0;
+    background: white;
 }
 
 .feedback-header {
@@ -430,7 +437,7 @@ button.secondary {
 
 .pricing {
     padding: 120px 40px;
-    background: #fafafa;
+    background: #F5FAFF;
 }
 
 .pricing-header {
@@ -604,7 +611,7 @@ button.secondary {
 
 .booking {
     padding: 90px 40px;
-    background: white;
+    background: #F5FAFF;
 }
 
 .booking-header {
